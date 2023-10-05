@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Taller</title>
+
+        <style>
+            *
+            {
+                font-family: Arial Nova;
+            }
+
+            form
+            {
+                width: 350px;
+                padding: 10px;
+                background-color: rgb(158, 166, 190);
+                border-radius: 5px;
+            }
+
+            hr
+            {
+                border-color: black;
+            }
+
+            .camp
+            {
+                width: 70%;
+                float: right;
+                border-radius: 3px;
+                border:solid 1px;
+            }
+
+            select
+            {
+                width: 70%;
+                float: right;
+                border-radius: 3px;
+                border:solid 1px;
+            }
+
+            .radio
+            {
+                float: left;
+            }
+
+            span
+            {
+                font-weight: bold;
+            }
+
+            .button
+            {
+                background-color: rgb(53, 53, 106);
+                color: white;
+                width: 100%;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="recogeDatos.php" method="post">
+            <label for="name">Nombre: </label><input class="camp" placeholder="Escribe tu nombre" type="text" name="name" id="name">
+            <br><br>
+            <label for="matricula">Matrícula: </label><input class="camp"  placeholder="Introduzca matrícula" type="text" name="matricula" id="matricula">
+            <br><br>
+            <label for="phone">Teléfono: </label><input class="camp"  placeholder="+34 ..." type="tel" name="phone" id="phone">
+            <br><br>
+            <label for="gmail">Gmail: </label><input class="camp"  placeholder="cuenta@gmail.com" type="email" name="gmail" id="gmail">
+            <br><br>
+            <label for="mark">Marca: </label>
+            <select name="mark" id="mark">
+                <option value="Nissan">Nissan</option>
+                <option value="Seat">Volvo</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+            </select>
+
+            <hr>
+
+            <input class="radio" type="radio" name="secure" id="secureYes" value="Usar seguro"><label for="secureYes">Usar seguro</label>
+            <br><br>
+            <input class="radio" type="radio" name="secure" id="secureNo" value="No usar seguro"><label for="secureNo">No usar seguro</label>
+
+            <hr>
+
+            <span>Hora de llegada: </span>
+            <br>
+            <input class="check" type="checkbox" name="morning" id="morning" value="Mañana"><label for="morning">Mañana</label>
+            <br>
+            <input class="check" type="checkbox" name="afternoon" id="afternoon" value="Tarde"><label for="afternoon">Tarde</label>
+            <br>
+            <input class="check" type="checkbox" name="night" id="night" value="Noche"><label for="night">Noche</label>
+
+            <hr>
+
+            <input class="button" type="submit" name="button" value="Envia los datos">
+        </form>
+    </body>
+</html>
