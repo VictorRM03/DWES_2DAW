@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Taller</title>
+
+        <style>
+            *
+            {
+                font-family: Arial Nova;
+            }
+
+            form
+            {
+                width: 350px;
+                padding: 10px;
+                margin: auto;
+                background-color: rgb(158, 166, 190);
+                border-radius: 5px;
+            }
+
+            hr
+            {
+                border-color: black;
+            }
+
+            .camp
+            {
+                width: 70%;
+                float: right;
+                border-radius: 3px;
+                border:solid 1px;
+            }
+
+            select
+            {
+                width: 70%;
+                float: right;
+                border-radius: 3px;
+                border:solid 1px;
+            }
+
+            .radio
+            {
+                float: left;
+            }
+
+            span
+            {
+                font-weight: bold;
+            }
+
+            .button
+            {
+                background-color: rgb(53, 53, 106);
+                color: white;
+                width: 100%;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="recogeDatos.php" method="post">
+            <label for="name">Nombre: </label><input class="camp" placeholder="Escribe tu nombre" type="text" name="name" id="name">
+            <br><br>
+            <label for="lastName">Apellido: </label><input class="camp"  placeholder="Introduzca matrícula" type="text" name="lastName" id="lastName">
+            <br><br>
+            <label for="phone">Teléfono: </label><input class="camp"  placeholder="+34 ..." type="tel" name="phone" id="phone">
+
+            <hr>
+
+            <input class="button" type="submit" name="button" value="Envia los datos">
+        </form>
+    </body>
+</html>
