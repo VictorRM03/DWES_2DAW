@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario PHP</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <form action="recogeDatos.php" method="get">
+            <h1>FROMULARIO</h1>
+            <label for="name">Nombre: </label>
+            <br>
+            <input type="text" name="name" id="name">
+            <br><br><hr>
+
+            <label for="age">Edad: </label>
+            <br>
+            <input type="number" name="age" id="age">
+            <br><br><hr>
+
+            <label for="sex">Sexo: </label>
+            <select name="sex" id="sex">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="No Binario">No Binario</option>
+            </select>
+            <br><br><hr>
+
+            <label for="color">Color: </label>
+            <br>
+            <input type="color" name="color" id="color">
+            <br><br><hr>
+
+            <input type="radio" name="radio" id="radio1" value="TE MANDO NOTICIAS"><label for="radio1">Te mando noticias</label>
+            <br>
+            <input type="radio" name="radio" id="radio2" value="NO TE MANDO NOTICIAS"><label for="radio2">No te mando noticias</label>
+            <br><br><hr>
+
+            <input type="submit" value="Enviar" id="boton">
+        </form>
+
+    </body>
+</html>

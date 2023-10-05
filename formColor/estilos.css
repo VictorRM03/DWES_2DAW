@@ -1,0 +1,71 @@
+*
+{
+    font-family: Arial Nova;
+}
+
+h1
+{
+    text-align: center;
+}
+
+form
+{
+    padding-left: 5px;
+    margin: auto;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(168, 218, 238);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px;
+}
+
+label
+{
+    font-size: 20px;
+}
+
+hr
+{
+    width: 50%;
+    height: 1.5px;
+    background-color: rgb(0, 44, 64);
+    border: none;
+    border-radius: 50%;
+}
+
+#name
+{
+    width: 96%;
+    border-radius: 5px;
+}
+
+#age
+{
+    width: 96%;
+    border-radius: 5px;
+}
+
+#sex
+{
+    width: 96%;
+    border-radius: 5px;
+}
+
+#color
+{
+    width: 96%;
+    border-radius: 5px;
+}
+
+#boton
+{
+    font-style: italic;
+    font-size: 15px;
+    margin-left: 25%;
+    width: 50%;
+    height: 30px;
+    background-color: rgb(0, 44, 64);
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+}
